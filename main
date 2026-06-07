@@ -1,0 +1,9 @@
+freq_dict = {}
+str_ing = input('Введите текст\n').lower().split()
+unic = 0
+for i in str_ing:
+    freq_dict[i] = str_ing.count(i)
+for count in freq_dict.values():
+    if count == 1:
+        unic += 1
+print(freq_dict, unic)
